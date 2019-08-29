@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.omerakkus.todolistapp.ui.MainActivity">
+
+    <item
+        android:id="@+id/action_add"
+        android:icon="@drawable/ic_action_add"
+        android:title="Add Item"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_order"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:title="Order by name"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_filter"
+        android:icon="@drawable/ic_filter"
+        android:title="Filter"
+        app:showAsAction="always" />
+
+
+</menu>

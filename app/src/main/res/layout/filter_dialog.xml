@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/sort_name_asc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="24dp"
+            android:checked="false"
+            android:text="@string/sort_by_asc"
+            android:textAlignment="textStart" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+        <RadioButton
+            android:id="@+id/sort_name_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="15dp"
+            android:checked="false"
+            android:text="@string/sort_by_desc"
+            android:textAlignment="textStart" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvStatusTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/status"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp" />
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/msItemStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvStatusTitle"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="20dp"/>
+
+
+</RelativeLayout>
